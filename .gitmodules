@@ -1,0 +1,6 @@
+[submodule "1 Ano/1 Semestre/LI1/fichas"]
+	path = 1 Ano/1 Semestre/LI1/fichas
+	url = git@github.com:Pontes6302/uMinho_LI1.git
+[submodule "1 Ano/1 Semestre/LI1/projeto"]
+	path = 1 Ano/1 Semestre/LI1/projeto
+	url = git@github.com:Pontes6302/LI1_project.git
