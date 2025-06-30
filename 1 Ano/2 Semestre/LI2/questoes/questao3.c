@@ -35,58 +35,71 @@ int main(void) {
     if (scanf("%d", &G) != 1)
         return 1;
     for (int i = 0; i < G; i++) {
-        int temp;
-        scanf("%d", &temp);
-        grupo_tamanho[i] = temp;
-        for (int j = 0; j < temp; j++) {
-            int valor;
-            scanf("%d", &valor);
-            valores[total_valores].valor = valor;
-            valores[total_valores].grupo = i;
+        int N;
+        if (scanf("%d", &N) != 1)
+            return 1;
+        grupo_tamanho[i] = N;
+        for (int j = 0; j < N; j++) {
+            if (scanf("%d", &valores[total_valores].valor) != 1)
+                return 1;
+            valores[total_valores].grupo = i + 1;
             valores[total_valores].posicao_original = total_valores;
             total_valores++;
         }
     }
 
     qsort(valores, total_valores, sizeof(Valor), comparar);
-    printf(" Pos  Ord  Grp     OrdRel  Val  Prm\n");
 
-    int ordem = 1;
-    for (int i = 0; i < total_valores; i++) {
-        int valor = valores[i].valor;
-        int grupo = valores[i].grupo;
-        int posicao_original = valores[i].posicao_original;
-        int primeira_posicao = posicao_original;
-        double ordem_relativa = ordem;
-
-        for (int j = i + 1; j < total_valores && valores[j].valor == valor; j++) {
-            ordem_relativa += ordem + (j - i);
+    double ord_rel[MAXIN];
+    int pos_ord[MAXIN];
+    int pos = 0;
+    while (pos < total_valores) {
+        int start = pos;
+        int end = pos;
+        while (end < total_valores && valores[end].valor == valores[start].valor) {
+            end++;
         }
-        ordem_relativa /= (total_valores - i);
+        double sum_ord = 0;
+        for (int i = start; i < end; i++) {
+            sum_ord += i + 1;
+        }
+        double avg_ord = sum_ord / (end - start);
+        for (int i = start; i < end; i++) {
+            ord_rel[valores[i].posicao_original] = avg_ord;
+            pos_ord[valores[i].posicao_original] = start;
+        }
+        pos = end;
+    }
 
-        printf("%4d %4d %4d %10.1f %4d %4d\n", i, ordem, grupo, ordem_relativa, valor, primeira_posicao);
-        grupo_ordem_media[grupo - 1] += ordem_relativa;
-        ordem++;
+    printf(" Pos  Ord  Grp     OrdRel  Val  Prm\n");
+    for (int i = 0; i < total_valores; i++) {
+        printf("%4d %4d %4d %10.1f %4d %4d\n", i, i + 1, valores[i].grupo, ord_rel[i], valores[i].valor, pos_ord[i]);
+    }
+
+    double total_ordem = 0;
+    for (int i = 0; i < total_valores; i++) {
+        grupo_ordem_media[valores[i].grupo - 1] += ord_rel[i];
+        total_ordem += ord_rel[i];
     }
 
     printf("\n  Grp MediaOrdem\n");
-    double media_total = 0;
     for (int i = 0; i < G; i++) {
         grupo_ordem_media[i] /= grupo_tamanho[i];
         printf("%4d %10.1f\n", i + 1, grupo_ordem_media[i]);
-        media_total += grupo_ordem_media[i];
     }
-    media_total /= G;
-    printf("Todos %10.1f\n", media_total);
+    printf("Todos %10.1f\n", total_ordem / total_valores);
 
-    double S = 0;
+    double H = 0;
     for (int i = 0; i < G; i++) {
-        S += grupo_tamanho[i] * pow(grupo_ordem_media[i] - media_total, 2);
+        H += grupo_tamanho[i] * pow(grupo_ordem_media[i] - (total_ordem / total_valores), 2);
     }
+    H = (12.0 / (total_valores * (total_valores + 1))) * H;
 
-    double X = ((double)(G - 1) / G) * (12 * S / (G * G - 1));
-    printf(" S: %.2f\n", S);
-    printf(" X: %.2f\n", X);
+    double ref = valor_referencia(G);
+
+    printf("\nCalc: %.2f\n", H);
+    printf(" Ref: %.2f\n", ref);
+    printf(H >= ref ? "Sim\n" : "Nao\n");
 
     return 0;
 }
