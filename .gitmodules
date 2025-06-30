@@ -4,3 +4,6 @@
 [submodule "1 Ano/1 Semestre/LI1/projeto"]
 	path = 1 Ano/1 Semestre/LI1/projeto
 	url = git@github.com:Pontes6302/LI1_project.git
+[submodule "1 Ano/2 Semestre/LI2/projeto"]
+	path = 1 Ano/2 Semestre/LI2/projeto
+	url = git@github.com:Pontes6302/LI2_project.git
