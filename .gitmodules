@@ -10,3 +10,6 @@
 [submodule "2 Ano/1 Semestre/LI3/fichas"]
 	path = 2 Ano/1 Semestre/LI3/fichas
 	url = git@github.com:Pontes6302/LI3_exercises.git
+[submodule "2 Ano/1 Semestre/BD/projeto"]
+	path = 2 Ano/1 Semestre/BD/projeto
+	url = git@github.com:Pontes6302/BD_project.git
