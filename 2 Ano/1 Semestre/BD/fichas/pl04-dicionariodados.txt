@@ -1,0 +1,31 @@
+CLiente(numero, nome, profissão, rua, localidade, codigo_postal)
+PK numero
+
+Telefone(numero,telefone)
+PK numero, telefone
+FK numero referencia cliente(numero)
+
+Pedido (id_pedido, estado, tempo_encomenda, encargo_extra, validade_cc, numero_cc, cvv_cc, preço_total, id_ementa, id_estafeta)
+PK id_pedido
+FK id_ementa refencia ementa(id_ementa)
+FK id_estafeta referencia estafeta(id_estafeta)
+FK numero_cliente referencia cliente(numero)
+
+Estafeta (id_estafeta, nome, contacto)
+PK id_estafeta
+
+Prato (id_prato, designação, dose, preço, tempo_preparação)
+PK id_prato
+
+Ementa (id_ementa, dia)
+PK id_ementa
+
+ementa_prato (id_prato, id_ementa, stock)
+PK id_prato, id_ementa
+FK id_ementa referencia ementa(id_ementa)
+FK id_prato referencia prato(id_prato)
+
+prato_pedido (id_prato, id_pedido, quantidade, preço, alterações)
+PK id_prato, id_pedido
+FK id_prato referencia prato(id_prato)
+FK id_pedido referencia pedido(id_pedido)
