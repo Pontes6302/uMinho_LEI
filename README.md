@@ -1,8 +1,5 @@
 # 🎓 uMinho - Engenharia Informática (LEI)
 
-![GitHub repo size](https://shields.io)
-![GitHub last commit](https://shields.io)
-
 Repositório centralizador de projetos e materiais de estudo da Licenciatura em Engenharia Informática na **Universidade do Minho**.
 
 ---
@@ -54,5 +51,3 @@ git clone --recursive https://github.com
 ## 👤 Autor
 
 **Sívio Pontes** 
-[![LinkedIn](https://shields.io)](https://linkedin.com)
-[![GitHub](https://shields.io)](https://github.com)
