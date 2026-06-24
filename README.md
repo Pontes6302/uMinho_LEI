@@ -17,10 +17,10 @@ Repositório centralizador de projetos e materiais de estudo da Licenciatura em 
 *   [**TMD**](./1%20Ano/1%20Semestre/TMD) - Tópicos de Matemática Discreta
 
 **2º Semestre**
-*   [**Análise**](./1%20Ano/2%20Semestre/Análise) - Análise Matemática
+*   [**Análise**](./1%20Ano/2%20Semestre/Análise) - Análise Matemática
 *   [**EPTN**](./1%20Ano/2%20Semestre/EPTN) - Elementos de Probabilidades e Teoria de Números
 *   [**LI2**](./1%20Ano/2%20Semestre/LI2) - Laboratórios de Informática II
-*   [**Lógica**](./1º%20Ano/2º%20Semestre/Lógica) - Lógica Computacional
+*   [**Lógica**](./1%20Ano/2%20Semestre/Lógica) - Lógica
 *   [**PI**](./1%20Ano/2%20Semestre/PI) - Programação Imperativa
 *   [**SC**](./1%20Ano/2%20Semestre/SC) - Sistemas de Computação
 
@@ -36,8 +36,16 @@ Repositório centralizador de projetos e materiais de estudo da Licenciatura em 
 *   [**FCD**](./2%20Ano/1%20Semestre/FCD) - Física dos Sistemas de Computação
 *   [**LI3**](./2%20Ano/1%20Semestre/LI3) - Laboratórios de Informática III
 
+**2º Semestre**
+*   [**FM**](./2%20Ano/2%20Semestre/FM) - Física Moderna
+*   [**IO**](./2%20Ano/2%20Semestre/IO) - Investigação Operacional
+*   [**IPM**](./2%20Ano/2%20Semestre/IPM) - Interface Pessoa-Máquina
+*   [**POO**](./2%20Ano/2%20Semestre/POO) - Programação Orientada aos Objetos
+*   [**RC**](./2%20Ano/2%20Semestre/RC) - Redes de Computadores
+*   [**SO**](./2%20Ano/2%20Semestre/SO) - Sistemas Operativos
+
 ---
 
 ## 👤 Autor
 
-**Sívio Pontes** 
+**Sívio Pontes**
