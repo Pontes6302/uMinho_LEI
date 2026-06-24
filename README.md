@@ -17,7 +17,7 @@ Repositório centralizador de projetos e materiais de estudo da Licenciatura em 
 *   [**TMD**](./1%20Ano/1%20Semestre/TMD) - Tópicos de Matemática Discreta
 
 **2º Semestre**
-*   [**Análise**](./1%20Ano/2%20Semestre/Análise) - Análise Matemática
+*   [**Análise**](./1%20Ano/2%20Semestre/Análise) - Análise Matemática
 *   [**EPTN**](./1%20Ano/2%20Semestre/EPTN) - Elementos de Probabilidades e Teoria de Números
 *   [**LI2**](./1%20Ano/2%20Semestre/LI2) - Laboratórios de Informática II
 *   [**Lógica**](./1%20Ano/2%20Semestre/Lógica) - Lógica
