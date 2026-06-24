@@ -1,0 +1,168 @@
+{
+  "statistics": [
+    {
+      "id": "1",
+      "red": 3,
+      "yellow": 4,
+      "draw": 0
+    }
+  ],
+  "games": [
+    {
+      "id": "4366",
+      "game": {
+        "board": [
+          [
+            false
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            false,
+            true,
+            false,
+            false
+          ],
+          [
+            true
+          ],
+          [
+            false,
+            true,
+            true,
+            true,
+            true
+          ],
+          [
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "player": false,
+        "winner": 0,
+        "isOver": true
+      },
+      "date": "2025-04-22T09:27:07.090Z"
+    },
+    {
+      "id": "337e",
+      "game": {
+        "board": [
+          [
+            true
+          ],
+          [
+            true,
+            false,
+            true
+          ],
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true,
+            false
+          ],
+          [
+            true
+          ],
+          [
+            false
+          ]
+        ],
+        "player": true,
+        "winner": 1,
+        "isOver": true
+      },
+      "date": "2025-11-14T10:50:30.172Z"
+    },
+    {
+      "board": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "winner": 0,
+      "player": false,
+      "id": "qWjklKetmpc"
+    },
+    {
+      "game": {
+        "board": [
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false
+          ]
+        ],
+        "player": true,
+        "winner": 1,
+        "isOver": true
+      },
+      "date": "2026-04-23T18:25:50.772Z",
+      "id": "8oAUkkpIvmE"
+    }
+  ],
+  "simulation": [
+    {
+      "id": "1",
+      "startPlayer": true,
+      "plays": []
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

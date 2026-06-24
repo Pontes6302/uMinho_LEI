@@ -1,0 +1,129 @@
+:root {
+  --background-color: #ECEEEC;
+  --accent-color: #7DF6B4;
+  --accent-color-dark: #77d5a1;
+  --light-color: #FFF;
+  --dark-color: #000;
+  --text-secondary-color: #3F3F3F;
+  --border-color: #4D4D4D;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Anek Latin';
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--light-color);
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  grid-template-rows: 50px auto auto 1fr 100px;
+  grid-template-areas:
+  "nav nav nav nav"
+  ". main categories ."
+  ". main gallery."
+  ". main . ."
+  "footer footer footer footer";
+  background-color: var(--background-color);
+  gap: 20px;
+}
+
+#nav {
+	grid-area: nav;
+}
+
+#main {
+	grid-area: main;
+}
+
+#categories {
+	grid-area: categories;
+}
+
+#gallery {
+	grid-area: gallery;
+}
+
+#footer {
+	grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-color);
+}
+
+.categories-list {
+  padding: 0;
+  list-style: none;
+}
+
+.categories-list li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.categories-list li:hover {
+  color: var(--accent-color-dark);
+}
+
+article.card{
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-secondary-color);
+}
+
+.tags li{
+  padding: 0.5rem 1.5rem;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.navcontainer{
+  display: flex;;
+}
+
+.navitem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: var(--light-color);
+}
+
+.navitem:hover {
+  background-color: var(--accent-color);
+}
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#signup {
+  background-color: var(--accent-color);
+}
+
+#signup:hover {
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+}

@@ -1,0 +1,31 @@
+html,body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#board{
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.slot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.slot:hover{
+  background-color: #7eae86;
+}

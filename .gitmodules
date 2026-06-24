@@ -16,3 +16,15 @@
 [submodule "2 Ano/1 Semestre/BD/projeto"]
 	path = 2 Ano/1 Semestre/BD/projeto
 	url = git@github.com:Pontes6302/BD_project.git
+[submodule "2 Ano/2 Semestre/IPM/projeto"]
+	path = 2 Ano/2 Semestre/IPM/projeto
+	url = git@github.com:Pontes6302/IPM_project.git
+[submodule "2 Ano/2 Semestre/POO/projeto"]
+	path = 2 Ano/2 Semestre/POO/projeto
+	url = git@github.com:Pontes6302/POO_project.git
+[submodule "2 Ano/2 Semestre/RC/tp2"]
+	path = 2 Ano/2 Semestre/RC/tp2
+	url = git@github.com:Pontes6302/RC_projectTP2.git
+[submodule "2 Ano/2 Semestre/SO/projeto"]
+	path = 2 Ano/2 Semestre/SO/projeto
+	url = git@github.com:Pontes6302/SO_project.git
